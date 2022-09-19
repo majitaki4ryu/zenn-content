@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  zenn:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./:/home/repo
+    working_dir: /home/repo
+    ports:
+      - "8000:8000"
