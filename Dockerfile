@@ -4,7 +4,7 @@ ENV SHELL /bin/bash
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install -y make vim zip unzip tree
+RUN apt install -y make vim zip unzip tree git
 
 # Clean up
 RUN apt-get autoremove -y \
